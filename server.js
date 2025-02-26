@@ -4,7 +4,7 @@ const WebSocket = require("ws");
 
 const app = express();
 const server = http.createServer(app);
-const wss = new WebSocket.Server({ noServer: true }); // Explicit WebSocket upgrade handling
+const wss = new WebSocket.Server({ noServer: true }); // Explicit WebSocket upgrade 👍
 
 // Serve the frontend
 app.use(express.static("public"));
